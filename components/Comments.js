@@ -3,7 +3,7 @@ import React from "react";
 
 const Comments = () => {
   return (
-    <section className="mt-24 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between items-center z-10">
+    <section className="mt-24 mb-16 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between items-center z-10">
       <div className=" w-full flex flex-col mx-auto justify-center items-center">
         <h2 className=" px-3 lg:px-10 text-blue text-4xl text-center mt-5 lg:mt-0 mx-5 font-raleway font-bold">
           C’est nos clients qui en parlent le mieux !
@@ -12,10 +12,10 @@ const Comments = () => {
           <img
             src="/images/logos/immodvisor.png"
             alt="immodvisor"
-            className="w-14 mr-5"
+            className="w-14 lg:w-20 mr-5"
           />
           <h3 className="text-blue font-raleway">
-            Tous nos commantaires sont certifiés Immodvisor
+            Tous nos commentaires sont certifiés Immodvisor
           </h3>
         </div>
         <div className="w-full mt-10">

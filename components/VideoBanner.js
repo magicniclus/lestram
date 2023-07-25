@@ -57,7 +57,7 @@ const VideoBanner = () => {
   }, []);
 
   return (
-    <section className="lg:bg-[url('/images/background/background_house.png')] lg:bg-left lg:bg-contain lg:bg-no-repeat mt-7 w-full mx-auto max-w-7xl flex lg:flex-row flex-col justify-end bg-blue-200 min-h-[200px] lg:items-end items-center">
+    <section className="lg:bg-[url('/images/background/logo-estran.png')] lg:bg-left lg:bg-contain lg:bg-no-repeat mt-7 w-full mx-auto max-w-7xl flex lg:flex-row flex-col justify-end bg-blue-200 min-h-[200px] lg:items-end items-center">
       <div className="lg:w-11/12 w-full flex justify-end lg:p-10 relative">
         <video
           onMouseEnter={() => setIsHover(true)}

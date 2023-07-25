@@ -3,7 +3,7 @@ import { database } from "./firebase.config";
 
 export function writeUserData(userId, nom, prenom, email, telephone, sexe) {
   return new Promise((resolve, reject) => {
-    set(ref(database, "contacts/" + userId), {
+    set(ref(database, "contactsLEstran/" + userId), {
       nom,
       prenom,
       email,

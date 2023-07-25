@@ -57,12 +57,12 @@ export default function Home() {
     <div className="">
       <Head>
         <title>
-          L'Estram | Maison neuve à Gujan Mestras disponible et proposé par
+          L'Estran | Maison neuve à Gujan Mestras disponible et proposé par
           signature promotion
         </title>
         <meta
           name="description"
-          content="L'Estram, la nouvelle résidence disponible à Gujan-Mestras. Maison neuve à partir de 265000€. Contactez-nous pour plus d'informations."
+          content="L'Estran, la nouvelle résidence disponible à Gujan-Mestras. Maison neuve à partir de 265000€. Contactez-nous pour plus d'informations."
         />
         <link
           rel="icon"

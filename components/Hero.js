@@ -60,7 +60,7 @@ const Hero = () => {
               <h1 className="text-2xl font-bold text-white font-raleway z-10">
                 DEVENEZ PROPRIÉTAIRE À <br />{" "}
                 <span className="text-white  inline-block text-4xl font-vidaloka relative z-20">
-                  GuJAN-MESTRAS (33470)
+                  GUJAN-MESTRAS (33470)
                 </span>
               </h1>
               <div className="lg:block hidden absolute left-0 bottom-1 w-full h-10 bg-or z-10"></div>

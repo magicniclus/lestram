@@ -8,31 +8,31 @@ import Comments from "../components/Comments";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Cookies from "../components/Cookies";
+import BrochureBanner from "../components/BrochureBanner";
 
 const dataOne = {
-  title: "BREUILLET (17920)",
-  description: "ESPRIT VILLAGE ET NATURE PRÉSERVÉS",
+  title: "GUJAN-MESTRAS (33470)",
+  description:
+    "VILLE AUX 7 PORTS ET CAPITALE DE L’OSTRÉICULTURE DU BASSIN D’ARCACHON",
   list: [
-    "Adresse en centre-bourg avec tous les commerces et services accessibles à pied",
-    "Plages de sable fin à 10 minutes",
-    "Plus Beau Village de France® à 3 km",
-    "Au cœur de la presqu’île d’Arvert avec ses marais salants, aigrettes, hérons cendrés...",
-    "Commune constituée de 25% d’espaces boisés",
-    "À proximité de Royan (10 km)",
+    "Tous les commerces, services, places des marchés et la gare à moins de 10 min. à vélo",
+    "Plages, ports et cabanes à huîtres à 15 min. à pied",
+    "220 km de pistes cyclables aménagés autour du Bassin pour se déplacer en toute sécurité au départ de Gujan-Mestras",
+    "Arcachon et Dune du Pilat à 20 min. en voiture",
   ],
-  img: "/images/background/MARAIS-BREUILLET.jpg",
+  img: "/images/background/house3.png",
   imgAlt: "maison",
   logo: "/images/logos/bulle_privilegie.png",
 };
 const dataTwo = {
-  title: "VOTRE MAISON SUR LA CÔTE",
-  description: "À PRIX TOUT DOUX",
+  title: "HAVRE DE PAIX",
+  description: "À TAILLE HUMAINE",
   list: [
-    "Résidence principale, secondaire, investissement patrimonial",
-    "Frais de notaire réduits : de l’ordre de 2 à 3% du prix de vente",
-    "Aucune mauvaise surprise et pas de travaux supplémentaires à financer (sauf à votre demande)",
+    "Petite copropriété de 14 appartements dans un cadre de vie paisible et serein",
+    "Extérieurs privatifs sans vis à vis et équipés de brise-vues",
+    "Résidence clôturée, stationnements privatifs et accès sécurisés",
   ],
-  img: "/images/background/background_house2.png",
+  img: "/images/background/house.png",
   imgAlt: "maison",
   logo: "/images/logos/bulle_budget.png",
 };
@@ -40,14 +40,14 @@ const dataThree = {
   title: "LE CONFORT DU NEUF",
   description: "UNE INVITATION À POSER VOS VALISES",
   list: [
-    "Maisons à étage de 3 ou 4 pièces",
+    "Appartements T2 de 51 m2",
+    "Appartements T3 de 60 à 70 m2",
     "Finitions soignées et garanties du neuf",
     "Salle de bains entièrement équipée",
-    "Volumes généreux et lumineux",
-    "Jardin privatif planté, clôturé et aménagé avec une terrasse en bois",
-    "Garage attenant aux maisons 4 pièces",
+    "Espaces de vie traversants et généreux",
+    "Jardin privatif planté, clôturé et aménagé avec une terrasse en bois pour les logements du rez-de-chaussée, loggias pour ceux de l’étage",
   ],
-  img: "/images/background/backgroud_house3.png",
+  img: "/images/background/house2.png",
   imgAlt: "maison",
   logo: "/images/logos/bulle_piece.png",
 };
@@ -57,12 +57,12 @@ export default function Home() {
     <div className="">
       <Head>
         <title>
-          CAMBIUM | Maison neuve à BREUILLET disponible et proposé par signature
-          promotion
+          L'Estram | Maison neuve à Gujan Mestras disponible et proposé par
+          signature promotion
         </title>
         <meta
           name="description"
-          content="Cambium, la nouvelle résidence disponible à BREUILLET. Maison neuve à partir de 250000€. Contactez-nous pour plus d'informations."
+          content="L'Estram, la nouvelle résidence disponible à Gujan-Mestras. Maison neuve à partir de 265000€. Contactez-nous pour plus d'informations."
         />
         <link
           rel="icon"
@@ -77,6 +77,7 @@ export default function Home() {
         <RightTextSection data={dataTwo} />
         <LeftTextSection data={dataThree} />
         <Banner />
+        <BrochureBanner />
         <Comments />
       </main>
       <Footer />

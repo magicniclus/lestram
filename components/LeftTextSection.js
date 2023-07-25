@@ -29,7 +29,9 @@ const LeftTextSection = (props) => {
           <h2 className="text-3xl text-blue lg:max-w-[70%] font-raleway font-bold">
             {title}
           </h2>
-          <h3 className="text-3xl text-or font-vidaloka">{description}</h3>
+          <h3 className="lg:text-3xl text-2xl text-or font-vidaloka">
+            {description}
+          </h3>
           <ul className="list-disc list-inside text-blue mt-7">
             {list.map((item, index) => (
               <li

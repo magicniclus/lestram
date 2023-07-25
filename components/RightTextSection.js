@@ -17,7 +17,7 @@ const RightTextSection = (props) => {
           <h2 className="text-3xl font-raleway font-bold text-blue lg:max-w-[70%]">
             {title}
           </h2>
-          <h3 className="text-3xl font-light text-or font-vidaloka">
+          <h3 className="lg:text-3xl text-2xl font-light text-or font-vidaloka">
             {description}
           </h3>
           <ul className="list-disc list-inside text-blue mt-7">

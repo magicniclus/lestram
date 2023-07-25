@@ -5,10 +5,10 @@ const Comments = () => {
   return (
     <section className="mt-24 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between items-center z-10">
       <div className=" w-full flex flex-col mx-auto justify-center items-center">
-        <h2 className="text-blue text-4xl text-center mt-5 lg:mt-0 mx-5 font-raleway font-bold">
+        <h2 className=" px-3 lg:px-10 text-blue text-4xl text-center mt-5 lg:mt-0 mx-5 font-raleway font-bold">
           C’est nos clients qui en parlent le mieux !
         </h2>
-        <div className="flex items-center">
+        <div className="flex items-center  px-3 lg:px-10">
           <img
             src="/images/logos/immodvisor.png"
             alt="immodvisor"
@@ -22,25 +22,25 @@ const Comments = () => {
           <img
             src="/images/comments/avis1.png"
             alt="commantaire client"
-            className="lg:w-7/12 w-full lg:mt-0 mt-10"
+            className="lg:w-7/12 w-full lg:mt-0 mt-10  px-3 lg:px-10"
           />
           <div className="flex lg:justify-end">
             <img
               src="/images/comments/avis2.png"
               alt="commantaire client"
-              className="lg:w-7/12 w-full lg:mt-0 mt-10"
+              className="lg:w-7/12 w-full lg:mt-0 mt-10  px-3 lg:px-10"
             />
           </div>
           <img
             src="/images/comments/avis3.png"
             alt="commantaire client"
-            className="lg:w-7/12 w-full lg:mt-0 mt-10"
+            className="lg:w-7/12 w-full lg:mt-0 mt-10  px-3 lg:px-10"
           />
           <div className="lg:flex hidden lg:justify-end items-center mt-10">
             <img
               src="/images/comments/avis4.png"
               alt="commantaire client"
-              className="lg:w-7/12 w-full"
+              className="lg:w-7/12 w-full  px-3 lg:px-10"
             />
           </div>
           <div className="bg-blue mt-10">

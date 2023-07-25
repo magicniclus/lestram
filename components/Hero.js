@@ -51,27 +51,41 @@ const Hero = () => {
   };
 
   return (
-    <section className="mt-7 w-full mx-auto max-w-7xl flex lg:flex-row flex-col bg-blue-200 justify-between min-h-[200px] lg:items-end items-center z-10">
-      <div className="lg:w-11/12 w-full flex lg:flex-row flex-col mx-auto">
-        <div className="lg:w-3/6 w-full pr-3 py-3 flex flex-col items-center justify-between ">
-          <h1 className="text-3xl font-light text-blue text-center font-raleway ">
-            DEVENEZ PROPRIÉTAIRE D'UNE MAISON NEUVE À{" "}
-            <span className="text-or font-vidaloka">BREUILLET (17920)</span>
-          </h1>
-          <img
-            className="max-w-[45%] mt-5 lg:mt-0"
-            src="./images/logos/logo_cambium.png"
-          />
-          <h2 className="text-or text-4xl font-light text-center mt-5 lg:mt-0 font-vidaloka">
-            UNIQUE & EXCEPTIONNEL SUR <br />
+    <section className="mt-7 w-full mx-auto max-w-7xl flex lg:flex-row flex-col justify-end bg-blue-200 min-h-[200px] lg:items-end items-center z-10 relative">
+      <div className="bg-[url('/images/background/lestram2.png')] bg-left bg-no-repeat bg-cover lg:w-3/5 w-full lg:min-h-0 min-h-[70%] lg:h-full absolute left-0 top-0"></div>
+      <div className="lg:w-11/12 w-full flex lg:flex-row flex-col mx-auto z-10">
+        <div className="lg:w-3/6 w-full pr-3 py-3 flex flex-col justify-between lg:px-0 px-10 ">
+          <div>
+            <div className="relative w-max lg:mt-0 mt-7">
+              <h1 className="text-2xl font-bold text-white font-raleway z-10">
+                DEVENEZ PROPRIÉTAIRE À <br />{" "}
+                <span className="text-white  inline-block text-4xl font-vidaloka relative z-20">
+                  GIJAN-MESTRAS (33470)
+                </span>
+              </h1>
+              <div className="absolute left-0 bottom-1 w-full h-10 bg-or z-10"></div>
+            </div>
+            <div className="text-white font-raleway mt-10 z-10">
+              <h3 className="text-lg">APPARTEMENTS NEUFS</h3>
+              <p>2 pièces de 51 m2 à partir de 264 000 €(1)</p>
+              <p>3 pièces de 60 à 70 m2 à partir de 323 000 €(2)</p>
+              <img
+                src="/images/logos/ptz+.png"
+                alt="prêt à taux zero"
+                className="w-24 mt-3"
+              />
+            </div>
+          </div>
+          <h2 className="text-white text-4xl font-light mt-10 lg:mt-0 font-vidaloka">
+            DESTINATION <br />
             <span className="text-5xl font-extrabold font-raleway">
-              LA CÔTE DE BEAUTÉ
+              BASSIN D'ARCACHON
             </span>
           </h2>
         </div>
         <div
           id="form"
-          className="bg-blue min-h-full lg:w-3/6 w-full px-10 py-7 mt-5 lg:mt-0"
+          className="bg-blue min-h-full lg:w-3/6 w-full px-10 py-7 mt-5 lg:mt-0 z-10"
         >
           <h2 className="text-or text-2xl font-raleway">
             Vous souhaitez en savoir plus ?<br />

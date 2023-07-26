@@ -40,8 +40,8 @@ const dataThree = {
   title: "LE CONFORT DU NEUF",
   description: "UNE INVITATION À POSER VOS VALISES",
   list: [
-    "Appartements T2 de 51 m2",
-    "Appartements T3 de 60 à 70 m2",
+    "Appartements T2 de 51 m^2",
+    "Appartements T3 de 60 à 70 m^2",
     "Finitions soignées et garanties du neuf",
     "Salle de bains entièrement équipée",
     "Espaces de vie traversants et généreux",

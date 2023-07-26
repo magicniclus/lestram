@@ -33,15 +33,21 @@ const LeftTextSection = (props) => {
             {description}
           </h3>
           <ul className="list-disc list-inside text-blue mt-7">
-            {list.map((item, index) => (
-              <li
-                key={index}
-                className="text-lg list-none font-semibold mt-2 font-raleway"
-              >
-                <ChevronRightIcon className="inline-block w-4 h-4 mr-2 text-blue" />
-                {item}
-              </li>
-            ))}
+            {list.map((item, index) => {
+              const itemWithSuperscript = item.replace("m^2", "m<sup>2</sup>");
+
+              return (
+                <li
+                  key={index}
+                  className="text-lg list-none font-semibold mt-2 font-raleway"
+                >
+                  <ChevronRightIcon className="inline-block w-4 h-4 mr-2 text-blue" />
+                  <span
+                    dangerouslySetInnerHTML={{ __html: itemWithSuperscript }}
+                  />
+                </li>
+              );
+            })}
           </ul>
           <a
             href="#form"

@@ -72,12 +72,14 @@ const Comments = () => {
               </div>
               <div className="mt-8 text-white text-xs">
                 <p>
-                  (1) Prix du lot 102, appartement 2 pièces de 51 m2 habitables,
-                  avec loggia et stationnement privatifs.
+                  <sup>(1)</sup> Prix du lot 102, appartement 2 pièces de 51 m
+                  <sup>2</sup> habitables, avec loggia et stationnement
+                  privatifs.
                 </p>
                 <p>
-                  (2) Prix du lot 104, appartement 3 pièces de 60 m2 habitables,
-                  avec loggia, terrasse et 2 stationnements privatifs.
+                  <sup>(2)</sup> Prix du lot 104, appartement 3 pièces de 60 m
+                  <sup>2</sup> habitables, avec loggia, terrasse et 2
+                  stationnements privatifs.
                 </p>
                 <p>
                   PTZ : dispositif d’aide à l’accession à la propriété

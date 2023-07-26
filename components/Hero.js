@@ -66,9 +66,14 @@ const Hero = () => {
               <div className="lg:block hidden absolute left-0 bottom-1 w-full h-10 bg-or z-10"></div>
             </div>
             <div className="text-white font-raleway mt-10 z-10">
-              <h3 className="text-lg">APPARTEMENTS NEUFS</h3>
-              <p>2 pièces de 51 m2 à partir de 264 000 €(1)</p>
-              <p>3 pièces de 60 à 70 m2 à partir de 323 000 €(2)</p>
+              <h3 className="text-2xl">APPARTEMENTS NEUFS</h3>
+              <p className="text-xl">
+                2 pièces de 51 m<sup>2</sup> à partir de 264 000 €<sup>(1)</sup>
+              </p>
+              <p className="text-xl">
+                3 pièces de 60 à 70 m<sup>2</sup> à partir de 323 000 €
+                <sup>(2)</sup>
+              </p>
               <img
                 src="/images/logos/ptz+.png"
                 alt="prêt à taux zero"

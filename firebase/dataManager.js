@@ -1,7 +1,7 @@
 import { getDatabase, ref, set } from "firebase/database";
 import { database } from "./firebase.config";
 
-export function writeUserData(userId, nom, prenom, email, telephone, civilité) {
+export function writeUserData(userId, nom, prenom, email, telephone, civilite) {
   // Pour obtenir la date et l'heure actuelles au format français
   const date = new Date();
   const day = String(date.getDate()).padStart(2, "0");
@@ -19,7 +19,7 @@ export function writeUserData(userId, nom, prenom, email, telephone, civilité) 
       prenom,
       email,
       telephone,
-      civilité,
+      civilite,
       dateEtHeure,
     })
       .then(() => {

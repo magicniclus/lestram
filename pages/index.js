@@ -34,7 +34,7 @@ const dataTwo = {
   ],
   img: "/images/background/house.png",
   imgAlt: "maison",
-  logo: "/images/logos/bulle_budget.png",
+  logo: "/images/logos/bille_intimiste.png",
 };
 const dataThree = {
   title: "LE CONFORT DU NEUF",
@@ -49,7 +49,7 @@ const dataThree = {
   ],
   img: "/images/background/house2.png",
   imgAlt: "maison",
-  logo: "/images/logos/bulle_piece.png",
+  logo: "/images/logos/bulle_size.png",
 };
 
 export default function Home() {

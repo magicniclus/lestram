@@ -8,10 +8,10 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>CAMBIUM | Merci</title>
+        <title>L'ESTRAN | Merci</title>
         <meta
           name="description"
-          content="Cambium, la nouvelle résidence disponible à BREUILLET. Maison neuve à partir de 250000€. Contactez-nous pour plus d'informations."
+          content="L'ESTRAN, la nouvelle résidence disponible à Gujean-Mestras. Maison neuve à partir de 269000€. Contactez-nous pour plus d'informations."
         />
         <link
           rel="icon"

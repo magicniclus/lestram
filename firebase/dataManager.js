@@ -1,20 +1,11 @@
 import { getDatabase, ref, set } from "firebase/database";
 import { database } from "./firebase.config";
+import axios from "axios";
 
 export function writeUserData(userId, nom, prenom, email, telephone, civilite) {
-  // Pour obtenir la date et l'heure actuelles au format français
-  const date = new Date();
-  const day = String(date.getDate()).padStart(2, "0");
-  const month = String(date.getMonth() + 1).padStart(2, "0"); // Les mois sont indexés à partir de 0 en JavaScript
-  const year = date.getFullYear();
-  const hour = String(date.getHours()).padStart(2, "0");
-  const minute = String(date.getMinutes()).padStart(2, "0");
-  const second = String(date.getSeconds()).padStart(2, "0");
-
-  const dateEtHeure = `${day}/${month}/${year} ${hour}:${minute}:${second}`;
-
+  const dateEtHeure = new Date().toISOString();
   return new Promise((resolve, reject) => {
-    set(ref(database, "contactsLEstran/" + userId), {
+    set(ref(database, "contactsLestran/" + userId), {
       nom,
       prenom,
       email,
@@ -22,6 +13,39 @@ export function writeUserData(userId, nom, prenom, email, telephone, civilite) {
       civilite,
       dateEtHeure,
     })
+      .then(() => {
+        resolve("success");
+      })
+      .catch((error) => {
+        reject(error);
+      });
+  });
+}
+
+export function writeCRMUserData(nom, prenom, email, telephone, civilite) {
+  const dateEtHeure = new Date().toISOString();
+
+  // Structure des données pour l'API
+  const contactData = {
+    nom: nom,
+    prenom: prenom,
+    email: email,
+    telephone_mobile: telephone,
+    civilite: civilite,
+    demande: {
+      date: dateEtHeure,
+      id_programme: 26,
+    },
+  };
+
+  return new Promise((resolve, reject) => {
+    axios
+      .post("https://api.leizee.com/contacts", contactData, {
+        auth: {
+          username: "signaturepromotion-castera",
+          password: "o53ifo07ox56511qv1m2473jijcg8d",
+        },
+      })
       .then(() => {
         resolve("success");
       })

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import MerciContainer from "../../components/MerciContainer";
+import * as fbq from "../../lib/fpixel";
 
 const index = () => {
+  useEffect(() => {
+    fbq.event("Lead");
+  }, []);
   return (
     <>
       <Head>
